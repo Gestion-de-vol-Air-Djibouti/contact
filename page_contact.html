@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contactez-nous</title>
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contactez-nous - Air Djibouti</h1>
+    <div class="contact-box">
+      <!-- Section gauche : formulaire -->
+      <div class="container-left">
+        <h3>Remplissez le formulaire</h3>
+        <form action="traitement.php" method="POST">
+          <label >Nom complet*</label>
+          <input type="text"  name="name" placeholder="Votre nom complet" required>
+
+          <label>Téléphone*</label>
+          <input type="text"  name="phone" placeholder="Votre numéro de téléphone" required>
+
+          <label >Adresse e-mail*</label>
+          <input type="email"  name="email" placeholder="Votre adresse e-mail" required>
+
+          <label>Sujet</label>
+          <input type="text"  name="subject" placeholder="Sujet (optionnel)">
+
+          <label >Message*</label>
+          <textarea  name="message" rows="5" placeholder="Votre message" required></textarea>
+
+          <button type="submit">Envoyer le message</button>
+          <button type="submit"><a href="accueil.html">retour</a> </button>
+
+        
+        </form>
+      </div>
+
+      <!-- Section droite : informations de contact -->
+      <div class="container-right">
+        <h3>Nos informations</h3>
+        <table>
+          <tr>
+            <td>📧 Email :</td>
+            <td>✔ Reservation@Air-Djibouti.Com</td>
+          </tr>
+          <tr>
+            <td>📞 Téléphone :</td>
+            <td>(+253) 21 30 37 37</td>
+          </tr>
+          <tr>
+            <td>📍 Adresse :</td>
+            <td>☈ 9/11 Rue De Genéve A coté De L'Hotel Plein Ciel,DJIBOUTI, DJIBOUTI </td>
+          </tr>
+        </table>
+
+        <h3>Nous localiser</h3>
+        <div class="map">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6651386.535188197!2d42.24971032431743!3d11.825138299017004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1621e5b8e8e8e8e8%3A0x6c4b4a4e4a4a4a4a!2sDjibouti!5e0!3m2!1sen!2sfr!4v1600000000000!5m2!1sen!2sfr" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
