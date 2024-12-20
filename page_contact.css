@@ -1,0 +1,115 @@
+  /* Général */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: rgb(255, 0, 0);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  h1, h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Container principal */
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background:rgb(255, 71, 71);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  /* Titre principal */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+
+  /* Contenu contact */
+  .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Formulaire (gauche) */
+  .container-left {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form textarea {
+    resize: none;
+  }
+
+  form button {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background: #003d80;
+  }
+
+  /* Informations (droite) */
+  .container-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-right table {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .container-right table td {
+    padding: 10px 0;
+    vertical-align: top;
+  }
+
+  .container-right table td:first-child {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  /* Carte */
+  .map iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 4px;
+  }
